@@ -1,0 +1,24 @@
+from tkinter import *
+from tkinter import ttk,messagebox
+import googletrans
+from googletrans import Translator
+
+root=Tk()
+root.title("Code and Coders")
+root.geometry("1080X400")
+root.resizable(False,False)
+root.configure(background="white")
+
+#icon
+image_icon=PhotoImage(file=s"Translate")
+root.iconphoto(False,image_icon)
+
+#arrow
+arrow_image=PhotoImage(file="Arrow")
+image_label=Label(root,image=arrow_image,width=150)
+image_label.place(x=460,y=50)
+
+
+root.mainloop()
+
+
